@@ -3,12 +3,11 @@ package hello;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.ImportResource;
 
 import java.util.Arrays;
 
 @SpringBootApplication
-@ImportResource("classpath:org.burdu")
+//@ImportResource("classpath:org.burdu")
 public class Application {
 
     public static void main(String[] args) {
