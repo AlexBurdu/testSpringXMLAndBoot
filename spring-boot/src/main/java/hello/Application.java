@@ -3,11 +3,13 @@ package hello;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.util.Arrays;
 
 @SpringBootApplication
-//@ImportResource("classpath:org.burdu")
+@ComponentScan({"org.burdu", "hello"})
+//@ImportResource({"classpath:WEB-INF/spring-core-config.xml", "classpath:WEB-INF/spring-mvc-config.xml"})
 public class Application {
 
     public static void main(String[] args) {
